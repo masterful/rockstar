@@ -1,0 +1,96 @@
+(set up some variables)
+the dawn is persevering                                                 (the dawn     =  1)
+your sleep is a punishment                                              (your sleep   = 10)
+rock the darkness                                                       (the darkness = [])
+let you be the dawn with the dawn                                       (you          =  2)
+let a sunrise be the dawn with you                                      (a sunrise    =  3)
+
+let your dream be your sleep without the dawn                           (your dream   =  9)
+put your dream without the dawn without the dawn into the unknown       (the unknown  =  7)
+let a dream be the unknown without the dawn                             (a dream      =  6)
+let the night be something of nothing                                   (the night    =  0)
+put the night into a space at the unknown
+
+(function that takes two character ascii codes, casts them to string, and puts them on the darkness)
+fate takes a fool and a wiseman
+cast a fool into darkness
+let the darkness at the night be darkness
+let the night be with you
+cast a wiseman into light
+let the darkness at the dawn be light
+let the dawn be with you
+
+my future is for me                                                     (my future      =  32 ->  )
+your future is treasure seeking                                         (your future    =  87 -> W)
+let my sleep be your future with the dawn                               (my sleep       =  88 -> X)
+let my nightmare be my sleep without your dream                         (my nightmare   =  79 -> O)
+put you with the dawn with you into me                                  (me             =   5     )
+your singing is a finalizing thing                                      (your singing   = 105 -> i)
+let the memories be your singing with me                                (the memories   = 110 -> n)
+let your daydreams be the memories with me                              (your daydreams = 115 -> s)
+
+(put "X Wins" into the string buffer)
+fate taking my sleep, my future
+fate taking your future, your singing
+fate taking the memories, your daydreams
+
+(initialize the three arrays we'll need)
+let the night be something of nothing                                   (the night    =  0, reset because fate will have incremented it)
+let the dawn be a sunrise without you                                   (the dawn     =  1, reset for the same reason)
+while your dream is bigger than the night                               (start at 9 and work our way backwards)
+knock your dream down
+let a space at your dream be the dawn without the dawn                  (set each position on the board to 0)
+put the night into excess at your dream                                 (set each count for x's - rows/columns/diagonals - to 0)
+let foes at your dream be the night                                     (set each count for o's - rows/columns/diagonals - to 0)
+
+(function that allows us to update the grid with a row/column/value)
+thinking takes feeling, energy and thought                              (feeling -> row, energy -> column, thought -> value)
+put a sunrise of energy with feeling into your mind
+put thought into a space at your mind
+put foes into your center
+if thought is as low as the dawn
+put excess into your center
+
+put your center at feeling into my hands                                (can't directly build up array values, so need to assign here)
+build my hands up                                                       (then increment it)
+put my hands into your center at feeling                                (then assign it back)
+put energy with a sunrise into place                                    (same for the column count)
+put your center at place into my center
+build my center up
+put my center into your center at place
+if feeling is energy                                                    (if row == column, we're on the first diagonal)
+put your center at a dream into my mind
+build my mind up
+put my mind into your center at a dream
+
+put you without feeling into place                                      (if 2 - row == column, we're on the second diagonal)
+if place is energy
+put your center at the unknown into my unknown
+build my unknown up
+put my unknown into your center at the unknown
+
+healing taking nothing                                                  (invoke the check winner method)
+
+
+(winner checking function)
+healing takes time
+put your sleep without the dawn into the sky                            (can't use your dream, since it's used an above loop)
+while the sky ain't nothing
+knock the sky down
+put excess at the sky into your mind
+if your mind is a sunrise                                               (check if the count for x's on this line is 3)
+join the darkness                                                       (if so, print out the "X Wins" string)
+shout the darkness
+give back the sky                                                       (return early)
+
+put foes at the sky into the ground
+if the ground is a sunrise                                              (check if the count for x's on this line is 3)
+cast my nightmare into the shadows
+put the shadows into the darkness at the night                          (switch up the first character from "X" to "O")
+join the darkness                                                       (print out the string)
+shout the darkness
+give back the sky
+
+
+
+
