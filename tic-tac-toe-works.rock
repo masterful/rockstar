@@ -1,0 +1,79 @@
+none is lovestruck
+one is o
+two is to
+three is big
+six is slants
+seven is slanted
+eight is counters
+nine is countered
+
+(have to initialize the array since we check 'em)
+put nine into step
+while step ain't nothing
+knock step down
+let board at step be none
+let exes at step be none
+let hoes at step be none
+
+checker takes time
+put three into value
+while value is bigger than nothing
+knock value down
+put eight into count
+while count ain't nothing
+knock count down
+put exes at count into something
+if something is three
+shout "x wins!"
+give back nothing
+
+put hoes at count into something
+if something is three
+shout "o wins!"
+give back nothing
+
+
+
+
+place takes row, column and value
+put three of column with row into position
+if board at position ain't nothing
+shout "that position is filled"
+give back nothing
+
+put value into board at position
+if value is one
+put exes into the counter
+
+if value is two
+put hoes into the counter
+
+put the counter at row into something
+build something up
+put something into the counter at row
+put column with three into place
+put the counter at place into something
+build something up
+put something into the counter at place
+if row is column
+put the counter at six into something
+build something up
+put something into the counter at six
+
+put two without row into place
+if place is column
+put the counter at seven into something
+build something up
+put something into the counter at seven
+
+checker taking nothing
+
+
+
+place taking one, one, and one
+place taking none, none, and two
+place taking two, two, and one
+place taking one, two, and two
+place taking two, none, and one
+place taking two, one, and two
+place taking none, two, and one
